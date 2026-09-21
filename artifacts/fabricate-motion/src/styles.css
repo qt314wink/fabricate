@@ -1,0 +1,29 @@
+:root { font-family: Inter, ui-sans-serif, system-ui; color: #e8edf2; background: #0b0d10; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.fm-nav { display: flex; gap: 8px; padding: 10px 16px; border-bottom: 1px solid #1c232c; }
+.fm-nav button { background: #161b22; color: inherit; border: 1px solid #2a3440; border-radius: 999px; padding: 6px 12px; }
+.fm-nav button[data-on="true"] { background: #7cdb7a; color: #0b0d10; }
+.fm-app { display: grid; grid-template-columns: 1fr 280px; grid-template-rows: auto 1fr; min-height: 100vh; }
+.fm-app header { grid-column: 1 / -1; display: flex; justify-content: space-between; padding: 12px 16px; }
+.fm-stage { position: relative; min-height: 60vh; }
+.fm-app aside { padding: 12px 16px; border-left: 1px solid #1c232c; display: flex; flex-direction: column; gap: 12px; }
+.fm-slider span { display: flex; justify-content: space-between; font-size: 13px; }
+.fm-slider small { display: block; color: #7b8794; font-size: 11px; }
+.fm-slider input { width: 100%; }
+.fm-meta { color: #7b8794; font-size: 12px; }
+.fm-actions { display: flex; gap: 8px; }
+.fm-actions button, .fm-sheet button { background: #7cdb7a; color: #0b0d10; border: 0; border-radius: 8px; padding: 8px 12px; font-weight: 600; }
+.fm-sheet { position: fixed; left: 0; right: 0; bottom: 0; background: #141a20; border-radius: 16px 16px 0 0; padding: 12px 16px 24px; }
+.fm-sheet-handle { width: 42px; height: 4px; background: #2a3440; border-radius: 4px; margin: 0 auto 12px; }
+.fm-scrim { position: absolute; inset: 0; background: #000; }
+@media (max-width: 800px) {
+  .fm-app { grid-template-columns: 1fr; }
+  .fm-app aside { border-left: 0; border-top: 1px solid #1c232c; }
+}
+
+.fm-slider-readout { display: flex; align-items: center; gap: 4px; }
+.fm-slider-readout input[type="number"] {
+  width: 72px; background: #161b22; color: inherit; border: 1px solid #2a3440; border-radius: 4px; padding: 2px 6px;
+}
+.fm-poster { min-height: 60vh; display: flex; align-items: center; justify-content: center; background: #0e1116; color: #7b8794; padding: 24px; text-align: center; }

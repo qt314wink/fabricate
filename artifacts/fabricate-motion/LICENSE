@@ -1,0 +1,29 @@
+Copyright (c) 2026 Jennipher Troup
+GitHub organization: melodicbloom
+Note: melodyfire is a separate platform/repository created by the author; it is not the GitHub organization.
+
+All rights reserved.
+
+This repository is an architectural kit and reference implementation
+derived from the Fabricate UI motion specification.
+
+Permission is granted, without charge, to evaluate, run, and study the
+source on a single machine for the purpose of deciding whether to license
+a bounded kit.
+
+You may not, without a separate written license from Jennipher Troup
+(melodicbloom):
+  - resell this repository, or a thin wrapper of it, as a competing kit
+  - ship the source in a client product as if it were your original work
+  - remove this copyright or the author credit
+
+A purchased bounded kit (see docs/kits/00-kit-catalog.md) includes a
+license grant for that kit's listed files in one commercial product,
+with attribution:
+
+    Motion architecture by Jennipher Troup (melodicbloom)
+
+Patent rights are not granted. The 2.5D tessellator and demo apps are
+preview tools, not manufacturing warranties.
+
+For kit licenses: contact via GitHub org melodicbloom.
